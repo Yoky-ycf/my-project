@@ -1,0 +1,20 @@
+server:
+  port: 6662
+spring:
+  #\u7ED9\u9879\u76EE\u6765\u4E2A\u540D\u5B57
+  application:
+    name: rabbitmq-consumer
+  #\u914D\u7F6ErabbitMq \u670D\u52A1\u5668
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #\u865A\u62DFhost \u53EF\u4EE5\u4E0D\u8BBE\u7F6E,\u4F7F\u7528server\u9ED8\u8BA4host
+    #virtual-host: JCcccHost
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/uni_monitor_v1.0?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
